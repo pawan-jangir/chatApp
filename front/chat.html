@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Apptunix Chat Room</title>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>Chat Application</h1>
+    </header>
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <input id="from" type="text" placeholder="Enter Your Name.." required/>
+        <input id="to" type="text" placeholder="Enter Who You are Sending to.." required/>
+        <button class="btn2" onclick="storeDetails()"> Done </button>
+      
+      </div>
+      
+      <div class="chat-messages" id="chat-messages">
+        <div class="no_message_dv"><p style="text-align: center;">No Message found</p></div>
+					<div class="message"></div>
+      </div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter Message"
+          required
+          autocomplete="off"
+        />
+        <button class="btn"> Send</button>
+      </form>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha256-ijqLssetA1NMNjZ+w1zaUafQQLm4IW5OoM8O+4tatME=" crossorigin="anonymous">
+    </script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
